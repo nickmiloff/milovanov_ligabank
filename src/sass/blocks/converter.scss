@@ -1,0 +1,31 @@
+.converter .container {
+  padding-top: 60px;
+}
+
+.converter__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 29px;
+
+  color: $basic-black;
+}
+
+.converter__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 71px;
+}
+
+.converter__button {
+  width: 382px;
+  padding: 21px 0;
+
+  font-size: 18px;
+}
+
+.converter__history {
+  margin-top: 100px;
+}

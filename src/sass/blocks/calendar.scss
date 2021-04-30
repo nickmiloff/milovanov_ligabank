@@ -1,0 +1,55 @@
+.calendar__input {
+  position: relative;
+  margin-top: 85px;
+}
+
+.calendar__input:hover input {
+  border-color: $basic-blue;
+
+  color: $basic-blue;
+}
+
+.calendar__input:hover::before {
+  background-size: 37px 40px;
+}
+
+.calendar__input::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 19px;
+
+  display: block;
+  width: 41px;
+  height: 44px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 44px 44px;
+  background-image: url("../../assets/img/calendar.svg");
+
+  transform: translateY(-50%);
+}
+
+.calendar__input input {
+  width: 390px;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  padding-right: 49px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 25px;
+
+  text-align: center;
+
+  border: 1px solid $basic-black;
+  border-radius: 4px;
+
+  background-color: transparent;
+
+  color: $basic-black;
+
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: $basic-black;
+
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-blue;
+  }
+
+  &:active {
+    color: $basic-blue;
+    opacity: 0.5;
+  }
+}
+
+.phone__title svg {
+  display: inline-block;
+  vertical-align: top;
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  fill: currentColor;
+}
+
+.phone__desc {
+  display: inline-block;
+  overflow-wrap: break-word;
+  max-width: 170px;
+  margin-left: 32px;
+  margin-top: 2px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+
+  color: $basic-grey;
+}

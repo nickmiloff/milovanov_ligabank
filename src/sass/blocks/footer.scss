@@ -1,0 +1,28 @@
+.footer {
+  margin-top: 109px;
+
+  background-color: $basic-white;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.footer__company-info {
+  margin-top: -11px;
+}
+
+.footer__address {
+  max-width: 252px;
+  margin-top: 11px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+
+  color: $basic-grey;
+}

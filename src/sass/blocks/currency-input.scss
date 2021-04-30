@@ -1,0 +1,130 @@
+.currency-input {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 525px;
+}
+
+.currency-input__label {
+  display: flex;
+  flex-direction: column;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 16px;
+
+  color: $basic-black;
+}
+
+.currency-input__value {
+  width: 390px;
+  padding: 12px 0;
+  margin-top: 29px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+
+  text-align: center;
+
+  border: 1px solid $basic-black;
+  border-radius: 4px;
+
+  background-color: transparent;
+}
+
+.currency-input__button,
+.currency-input__item button {
+  width: 120px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 28px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: -2.6px;
+
+  text-align: center;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.currency-input__button {
+  position: relative;
+
+  border: 1px solid $basic-black;
+  border-radius: 4px;
+}
+
+.currency-input__button::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 18px;
+
+  border: 0 solid $basic-black;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.currency-input__button--active::before {
+  top: calc(50% - 2px + 6px);
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.currency-input__value,
+.currency-input__button {
+  outline-color: $basic-blue;
+}
+
+.currency-input__value:hover,
+.currency-input__button:hover,
+.currency-input__button:hover::before {
+  border-color: $basic-blue;
+  color: $basic-blue;
+}
+
+.currency-input__list {
+  overflow-x: hidden;
+  position: absolute;
+  top: calc(100% + 1px);
+  right: 0;
+
+  display: none;
+  width: 120px;
+
+  list-style: none;
+
+  border: 1px solid $basic-black;
+  border-radius: 4px;
+
+  background-color: $basic-white;
+
+  &--active {
+    display: block;
+  }
+}
+
+.currency-input__item button {
+  border: none;
+
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $basic-blue;
+
+    color: $basic-white;
+  }
+}

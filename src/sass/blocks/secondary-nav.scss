@@ -1,0 +1,32 @@
+.secondary-nav {
+  margin-top: -3px;
+}
+
+.secondary-nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  list-style: none;
+}
+
+.secondary-nav__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $basic-black;
+
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    color: $basic-blue;
+    opacity: 0.5;
+  }
+}

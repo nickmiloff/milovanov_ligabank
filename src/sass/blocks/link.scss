@@ -1,0 +1,33 @@
+.link {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 17px 33px;
+
+  background-color: $basic-white;
+
+  border: 3px solid $basic-white;
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 13px;
+
+  color: $basic-black;
+
+  text-decoration: none;
+
+  transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-blue;
+
+    color: $basic-white;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

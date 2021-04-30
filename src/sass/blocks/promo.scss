@@ -1,0 +1,38 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: $basic-blue;
+
+  color: $basic-white;
+}
+
+.promo .container {
+  margin: 0 auto;
+  padding: 102px 268px 114px;
+}
+
+.promo__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 63px;
+
+  color: $basic-white;
+}
+
+.promo__slogan {
+  margin-top: 8px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: $special-white;
+}
+
+.promo__link {
+  margin-top: 34px;
+}

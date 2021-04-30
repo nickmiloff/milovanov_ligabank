@@ -1,0 +1,13 @@
+.header {
+  background-color: $basic-white;
+}
+
+.header .container {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.header__nav {
+  margin-left: 58px;
+}

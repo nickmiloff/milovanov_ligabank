@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+  column-gap: 15px;
+
+  list-style: none;
+}
+
+.socials__link {
+  color: $basic-black;
+
+  &:hover {
+    color: $basic-blue;
+  }
+
+  &:active {
+    color: $basic-blue;
+    opacity: 0.5;
+  }
+}
+
+.socials svg {
+  fill: currentColor;
+}
