@@ -74,6 +74,7 @@ const Footer = () => {
               <svg width="9" height="16">
                 <use xlinkHref="#fb"></use>
               </svg>
+              Ссылка на страницу Лого Банк в Facebook
             </a>
           </li>
           <li className="socials__item">
@@ -81,6 +82,7 @@ const Footer = () => {
               <svg width="16" height="16">
                 <use xlinkHref="#inst"></use>
               </svg>
+              Ссылка на страницу Лого Банк в Instagram
             </a>
           </li>
           <li className="socials__item">
@@ -88,6 +90,7 @@ const Footer = () => {
               <svg width="16" height="13">
                 <use xlinkHref="#twit"></use>
               </svg>
+              Ссылка на страницу Лого Банк в Twitter
             </a>
           </li>
           <li className="socials__item">
@@ -95,6 +98,7 @@ const Footer = () => {
               <svg width="16" height="13">
                 <use xlinkHref="#yt"></use>
               </svg>
+              Ссылка на страницу Лого Банк в Youtube
             </a>
           </li>
         </ul>

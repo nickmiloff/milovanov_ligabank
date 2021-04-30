@@ -1,7 +1,24 @@
 .history {
+  position: relative;
   padding: 40px 70px;
 
   background-color: $basic-white;
+}
+
+.history::before {
+  content: "";
+  display: block;
+  width: 1px;
+  position: absolute;
+  top: 100px;
+  bottom: 88px;
+  left: 50%;
+
+  background-color: $light-grey;
+
+  box-shadow: 0 4px 4px rgba($pure-black, 0.25);
+
+  transform: translateX(-50%);
 }
 
 .history__title {
@@ -46,8 +63,26 @@
 }
 
 .history__from {
+  position: relative;
   width: 91px;
   margin-right: 53px;
+}
+
+.history__from::after {
+  content: "";
+  display: block;
+  width: 41px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  right: -41px;
+
+  transform: translateY(-50%);
+
+  background-position: center;
+  background-size: 41px 18px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/arrow-to.svg");
 }
 
 .history__to {

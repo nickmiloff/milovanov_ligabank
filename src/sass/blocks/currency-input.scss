@@ -6,6 +6,21 @@
   width: 525px;
 }
 
+.currency-input:first-child::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 36px;
+  position: absolute;
+  top: 54px;
+  right: -92px;
+
+  background-position: center;
+  background-size: 56px 36px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/swap.svg");
+}
+
 .currency-input__label {
   display: flex;
   flex-direction: column;
