@@ -23,8 +23,8 @@ const HistoryItem = ({
       >
         {dateObj.toLocaleString(`ru-RU`, DATE_OPTIONS)}
       </time>
-      <span className="history__from">{have.value} {have.currency}</span>
-      <span className="history__to">{want.value} {want.currency}</span>
+      <span className="history__from"><span>{have.value}</span> {have.currency}</span>
+      <span className="history__to"><span>{want.value}</span> {want.currency}</span>
     </li>
   );
 };

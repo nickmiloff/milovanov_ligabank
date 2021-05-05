@@ -3,7 +3,11 @@
   margin-top: 85px;
 }
 
-.calendar__input:hover input {
+.calendar__input input:disabled {
+  cursor: not-allowed;
+}
+
+.calendar__input:hover input:not(:disabled) {
   border-color: $basic-blue;
 
   color: $basic-blue;
@@ -27,7 +31,7 @@
   transform: translateY(-50%);
 }
 
-.calendar__input:hover::before {
+.calendar__input:not(:disabled):hover::before {
   background-size: 37px 40px;
 }
 

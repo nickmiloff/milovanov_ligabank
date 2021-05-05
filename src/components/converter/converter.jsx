@@ -29,12 +29,17 @@ const Converter = ({
   onClearButtonClick,
   loaded
 }) => {
-  const isLoadedCorrectly = loaded !== Statuses.LOADED;
+  const isLoadedCorrectly = loaded === Statuses.LOADED;
+  const isErrored = loaded === Statuses.ERROR;
 
   return (
     <section className="converter">
       <div className="container">
         <h2 className="converter__title">Конвертер валют</h2>
+        {
+          isErrored ?
+            <span className="converter__error-message">При получении данных произошла ошибка Попробуйте обновить страницу</span> : ``
+        }
         <form className="converter__form" action="#" method="get">
           <CurrencyInput
             additionalClass="converter__currency-input"
@@ -43,7 +48,7 @@ const Converter = ({
             onValueChange={onHaveValueChange}
             currency={haveCurrency}
             onCurrencyChange={onHaveCurrencyChange}
-            disabled={isLoadedCorrectly}
+            disabled={!isLoadedCorrectly}
           />
           <CurrencyInput
             additionalClass="converter__currency-input"
@@ -52,18 +57,18 @@ const Converter = ({
             onValueChange={onWantValueChange}
             currency={wantCurrency}
             onCurrencyChange={onWantCurrencyChange}
-            disabled={isLoadedCorrectly}
+            disabled={!isLoadedCorrectly}
           />
           <Calendar
             additionalClass="converter__calendar"
             date={date}
             onDateChange={onDateChange}
-            disabled={isLoadedCorrectly}
+            disabled={!isLoadedCorrectly}
           />
           <Button
             additionalClass="converter__button"
             onClick={onSaveButtonClick}
-            disabled={isLoadedCorrectly}
+            disabled={!isLoadedCorrectly}
           >
             Сохранить результат
           </Button>

@@ -102,11 +102,15 @@
 .currency-input__value,
 .currency-input__button {
   outline-color: $basic-blue;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
-.currency-input__value:hover,
-.currency-input__button:hover,
-.currency-input__button:hover::before {
+.currency-input__value:not(:disabled):hover,
+.currency-input__button:not(:disabled):hover,
+.currency-input__button:not(:disabled):hover::before {
   border-color: $basic-blue;
   color: $basic-blue;
 }
