@@ -9,10 +9,6 @@
   color: $basic-blue;
 }
 
-.calendar__input:hover::before {
-  background-size: 37px 40px;
-}
-
 .calendar__input::before {
   content: "";
   position: absolute;
@@ -29,6 +25,10 @@
   background-image: url("../../assets/img/calendar.svg");
 
   transform: translateY(-50%);
+}
+
+.calendar__input:hover::before {
+  background-size: 37px 40px;
 }
 
 .calendar__input input {

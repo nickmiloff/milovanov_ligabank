@@ -21,6 +21,10 @@
   transform: translateX(-50%);
 }
 
+.history--empty::before {
+  content: none;
+}
+
 .history__title {
   font-style: normal;
   font-weight: 500;
@@ -74,10 +78,8 @@
   width: 41px;
   height: 18px;
   position: absolute;
-  top: 50%;
+  top: 3px;
   right: -41px;
-
-  transform: translateY(-50%);
 
   background-position: center;
   background-size: 41px 18px;
@@ -89,10 +91,27 @@
   width: 117px;
 }
 
+.history__to,
+.history__from {
+  word-break: break-all;
+}
+
 .history__button {
   width: 198px;
   padding: 17px 0;
   margin-top: 47px;
 
   font-size: 16px;
+}
+
+.history__empty-message {
+  margin-top: 47px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 47px;
+  text-align: center;
+
+  color: $basic-black;
 }

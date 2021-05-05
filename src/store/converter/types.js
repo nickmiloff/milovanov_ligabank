@@ -1,0 +1,9 @@
+export const SET_LOADED = `converter/setLoaded`;
+export const SET_HAVE_CURRENCY = `converter/setFromCurrency`;
+export const SET_HAVE_VALUE = `converter/setFromValue`;
+export const SET_WANT_CURRENCY = `converter/setWantCurrency`;
+export const SET_WANT_VALUE = `converter/setWantValue`;
+export const SET_DATE = `converter/setDate`;
+export const SET_RATES = `converter/setRates`;
+export const ADD_ORDER = `converter/addOrder`;
+export const CLEAR_HISTORY = `converter/clearHistory`;

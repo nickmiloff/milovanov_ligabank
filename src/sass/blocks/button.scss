@@ -16,12 +16,18 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: $basic-white;
     color: $basic-blue;
   }
 
-  &:active {
+  &:not(:disabled):active {
     opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    filter: grayscale(0.8);
   }
 }

@@ -26,3 +26,13 @@
   margin: 0 auto;
   padding: 0 98px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}

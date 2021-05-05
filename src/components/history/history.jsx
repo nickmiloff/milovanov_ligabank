@@ -1,70 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '../button/button';
+import {orderPropTypes} from '../../prop-types.prop';
 
-const History = ({additionalClass = ``}) => {
+import Button from '../button/button';
+import HistoryList from '../history-list/history-list';
+
+const History = ({
+  additionalClass = ``,
+  history,
+  onClearButtonClick
+}) => {
+  const isEmpty = history.length === 0;
+
   return (
-    <div className={`history ${additionalClass}`}>
+    <div className={`history ${isEmpty ? `history--empty` : ``} ${additionalClass}`}>
       <h3 className="history__title">История конвертация</h3>
-      <ul className="history__list">
-        <li className="history__item">
-          <time className="history__date" dateTime="2020-11-25">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-        <li className="history__item">
-          <time className="history__date" dateTime="25.11.2020">25.11.2020</time>
-          <span className="history__from">1000 RUB</span>
-          <span className="history__to">13,1234 USD</span>
-        </li>
-      </ul>
-      <Button additionalClass="history__button">Очистить историю</Button>
+      {
+        isEmpty ?
+          <h4 className="history__empty-message">Похоже в истории конвертаций нет ни одной записи</h4> :
+          <HistoryList orders={history} />
+      }
+      <Button
+        additionalClass="history__button"
+        onClick={onClearButtonClick}
+        disabled={isEmpty}
+      >
+        Очистить историю
+      </Button>
     </div>
   );
 };
 
 History.propTypes = {
-  additionalClass: PropTypes.string
+  additionalClass: PropTypes.string,
+  history: PropTypes.arrayOf(PropTypes.shape(orderPropTypes)).isRequired,
+  onClearButtonClick: PropTypes.func.isRequired
 };
 
 export default History;

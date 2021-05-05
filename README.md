@@ -28,4 +28,11 @@ _https://create-react-app.dev/docs/adding-images-fonts-and-files/_
 - В качестве календаря был выбран `react-datepicker`
 _Адаптированная под React версия datepicker_
 
+- Для удобного использования redux, был установлен `@reduxjs/toolkit`
+
+- Для удобной работой с сервера был использован пакет `axios`
+
+- Для получения курса валют был выбран сервис - [Rates API](https://ratesapi.io/)
+_Один из бесплатных api предоставляющих информацию о курсе валют. Полный список api - [ссылка](https://github.com/public-apis/public-apis#currency-exchange)_
+
 ---
