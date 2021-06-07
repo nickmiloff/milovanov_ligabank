@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/milovanov_ligabank/static/css/main.e77f845a.chunk.css",
+    "main.js": "/milovanov_ligabank/static/js/main.5e6314ea.chunk.js",
+    "main.js.map": "/milovanov_ligabank/static/js/main.5e6314ea.chunk.js.map",
+    "runtime-main.js": "/milovanov_ligabank/static/js/runtime-main.6fc562d2.js",
+    "runtime-main.js.map": "/milovanov_ligabank/static/js/runtime-main.6fc562d2.js.map",
+    "static/css/2.0cfad52a.chunk.css": "/milovanov_ligabank/static/css/2.0cfad52a.chunk.css",
+    "static/js/2.af82873b.chunk.js": "/milovanov_ligabank/static/js/2.af82873b.chunk.js",
+    "static/js/2.af82873b.chunk.js.map": "/milovanov_ligabank/static/js/2.af82873b.chunk.js.map",
+    "index.html": "/milovanov_ligabank/index.html",
+    "static/css/2.0cfad52a.chunk.css.map": "/milovanov_ligabank/static/css/2.0cfad52a.chunk.css.map",
+    "static/css/main.e77f845a.chunk.css.map": "/milovanov_ligabank/static/css/main.e77f845a.chunk.css.map",
+    "static/js/2.af82873b.chunk.js.LICENSE.txt": "/milovanov_ligabank/static/js/2.af82873b.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/milovanov_ligabank/static/media/white-card.ecba570a.png",
+    "static/media/logo.65ddc6c9.svg": "/milovanov_ligabank/static/media/logo.65ddc6c9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fc562d2.js",
+    "static/css/2.0cfad52a.chunk.css",
+    "static/js/2.af82873b.chunk.js",
+    "static/css/main.e77f845a.chunk.css",
+    "static/js/main.5e6314ea.chunk.js"
+  ]
+}
