@@ -1,6 +1,7 @@
 {
   "name": "milovanov_ligabank",
   "version": "0.1.0",
+  "homepage": "https://nickmiloff.github.io/milovanov_ligabank/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
@@ -8,6 +9,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "gh-pages": "^3.2.0",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -23,7 +25,9 @@
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
     "eslint": "eslint --ext .jsx --ext .js src/",
     "test": "npm run stylelint && npm run eslint",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [

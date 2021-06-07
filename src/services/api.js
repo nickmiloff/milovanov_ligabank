@@ -2,7 +2,7 @@ import * as axios from 'axios';
 
 import {CURRENCIES} from '../const';
 
-const BASE_URL = `http://api.exchangeratesapi.io/v1/`;
+const BASE_URL = `https://api.currencyscoop.com/v1/historical/`;
 const REQUEST_TIMEOUT = 5000;
 
 const SYMBOLS_CURRENCYS = CURRENCIES.join(`,`);
@@ -14,7 +14,7 @@ export const createAPI = () => {
       "Content-Type": `application/json`,
     },
     params: {
-      "access_key": `a9e898c998acc26560acb1731e23f2d1`,
+      "api_key": `a4d488335f5b33f28a6f1d2ce3cdee39`,
       "symbols": SYMBOLS_CURRENCYS
     },
     timeout: REQUEST_TIMEOUT,

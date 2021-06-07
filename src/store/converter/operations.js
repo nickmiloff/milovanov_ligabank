@@ -7,10 +7,14 @@ export const loadRates = (date) => (dispatch, getState, api) => {
   dispatch(actions.setLoaded(Statuses.LOAD));
 
   return api
-    .get(dateObj.toISOString().slice(0, 10))
+    .get(`/`, {
+      params: {
+        "date": dateObj.toISOString().slice(0, 10)
+      }
+    })
     .then(({data}) => {
       dispatch(actions.setDate(dateObj.getTime()));
-      dispatch(actions.setRates(data.rates));
+      dispatch(actions.setRates(data.response.rates));
       dispatch(actions.setHaveValue(getState().converter.have.value));
       dispatch(actions.setLoaded(Statuses.LOADED));
     })
