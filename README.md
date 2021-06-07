@@ -5,6 +5,17 @@
 
 ---
 
+[Просмотреть сайт на githunb pages](https://nickmiloff.github.io/milovanov_ligabank/)
+
+---
+
+### Скриншоты
+
+![Главная страница](https://i.imgur.com/Ha2o1CE.png)
+![Конвертер](https://i.imgur.com/vPvi4UU.png)
+
+---
+
 ### «Почему именно так?»
 
 - Мной был выбран следующий инструмент автоматизации - `create-react-app`
